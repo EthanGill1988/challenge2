@@ -23,8 +23,29 @@ header, main, footer {
 
 .card {
     flex: 0 0 100%;
+    padding: 1lh;
 }
 
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: -0.5lh;
+    min-width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+figure > * {
+    padding: 0.5lh;
+}
+
+figure > p {
+    padding-top: 1.5lh;
+}
 @media screen and (min-width: 768px) {
     .card {
         flex: 0 0 50%;
