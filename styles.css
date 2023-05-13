@@ -35,13 +35,39 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
+
+.header div ul li {
+    display: inline-flex;
+    text-align: justify;
+}
+
+a {
+    color:purple;
+    text-decoration: underline;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+                 
+}
 .container  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-  
+.aboutMe {
+    flex: 0 0 100%;
+    padding: 2.5lh 1vw;
+}
  
 .footer {
    padding-left: 30px;
@@ -60,11 +86,11 @@ body {
     padding: 2.5lh 1vw;
 }
 
-.card0 {
+/*.card0 {
     flex: 0 0 100%;
     padding: 2.5lh 1vw;
    
-}
+}*/
 
 
 figure {
@@ -133,6 +159,9 @@ pre {
     .card {
         flex: 0 0 50%;
     }
+    .hero {
+        flex: 0 0 50%;
+    }
 }
 
 @media screen and (min-width: 996px) {
@@ -140,5 +169,17 @@ pre {
         
         flex: 0 0 33%;
     }
+    .hero { 
+        flex: 0 0 33%;
+    }
 }
 
+@media screen and (min-width: 1280px) {
+    .card {
+        flex: 0 0 17%;
+    }
+    .hero {
+        flex: 0 0 17%;
+    }
+    
+}
