@@ -15,7 +15,7 @@
 
 body {
     padding: 1vh 1vw;
-    background: var(--bacground);
+    background: #6699cc;
 
 }
 
@@ -35,6 +35,11 @@ header, main, footer {
     padding: 2.5lh 1vw;
 }
 
+.card0 {
+    flex: 0 0 100%;
+    padding: 2.5lh 1vw;
+   
+}
 
 figure {
     position: relative;
@@ -64,6 +69,10 @@ figcaption {
 figcaption:hover {
     box-shadow: greenyellow 1vw 1vw 1vw;
 }
+figure > img {
+    padding-left: 23%;
+    padding-right: 33%;
+}
 figure > * {
     padding: 0.5lh;
 }
@@ -71,6 +80,14 @@ figure > * {
 figure > p {
     padding-top: 2.5lh;
    
+}
+
+img {
+    max-width: 100%;
+   padding-top: 5%;
+    margin: 2%;
+    position: relative;
+    display: flex;
 }
 
 pre {
