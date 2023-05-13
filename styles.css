@@ -1,6 +1,6 @@
 * {
     font-family: sans-serif;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -8,9 +8,19 @@ body {
 
 }
 
+.container  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 header, main, footer {
     border: dotted dodgerblue 0.5px;
 
+}
+
+.card {
+    flex: 0 0 100%;
 }
 
 figure, figcaption, pre {
