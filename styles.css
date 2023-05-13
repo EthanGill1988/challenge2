@@ -23,20 +23,24 @@ header, main, footer {
 
 .card {
     flex: 0 0 100%;
-    padding: 1lh;
+    padding: 2lh 1vw;
 }
 
 
 figure {
     position: relative;
+    border: dashed black 3px;
 }
 
 figcaption {
     position: absolute;
-    top: -0.5lh;
+    top: -0.75lh;
     min-width: 75%;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: teal;
+    border: solid black 1px;
+    border-radius: 8px;
 }
 
 figure > * {
@@ -46,6 +50,16 @@ figure > * {
 figure > p {
     padding-top: 1.5lh;
 }
+
+pre {
+    padding: 1lh;
+    font-size: 150%;
+    font-family: monospace;
+    border-radius: 8px;
+    background-color: bisque;
+    margin:1vw; 
+
+}
 @media screen and (min-width: 768px) {
     .card {
         flex: 0 0 50%;
@@ -54,10 +68,8 @@ figure > p {
 
 @media screen and (min-width: 996px) {
     .card {
+        
         flex: 0 0 33%;
     }
 }
 
-figure, figcaption, pre {
-    border: dotted darkred 0.5px;
-}
