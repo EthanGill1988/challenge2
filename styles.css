@@ -19,15 +19,40 @@ body {
 
 }
 
+.header {
+    padding:30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightblue;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header div {
+    float:right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
 .container  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-header, main, footer {
-    border: dotted dodgerblue 0.5px;
+  
+ 
+.footer {
+   padding-left: 30px;
+   clear: both;
+   font-family: 'Courier New', Courier, monospace;
+   flex-direction: column;
 
+}
+
+.footer h2 {
+    font-size: 20px;
 }
 
 .card {
@@ -41,9 +66,11 @@ header, main, footer {
    
 }
 
+
 figure {
     position: relative;
-    border: dashed var(--edge) 3px;
+    border: thin var(--edge) 3px;
+    border-radius: 2%;
 
 }
 
@@ -72,6 +99,7 @@ figcaption:hover {
 figure > img {
     padding-left: 23%;
     padding-right: 33%;
+
 }
 figure > * {
     padding: 0.5lh;
@@ -88,6 +116,7 @@ img {
     margin: 2%;
     position: relative;
     display: flex;
+    
 }
 
 pre {
