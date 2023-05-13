@@ -1,6 +1,8 @@
 * {
     font-family: sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -21,6 +23,18 @@ header, main, footer {
 
 .card {
     flex: 0 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 996px) {
+    .card {
+        flex: 0 0 33%;
+    }
 }
 
 figure, figcaption, pre {
