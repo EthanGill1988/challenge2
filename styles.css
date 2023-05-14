@@ -58,6 +58,7 @@ a {
     
                  
 }
+
 .container  {
     display: flex;
     justify-content: space-between;
@@ -86,6 +87,10 @@ a {
     padding: 2.5lh 1vw;
 }
 
+.workCard {
+    flex: 0 0 100%;
+    padding: 2.5lh 1vw;
+}
 
 figure {
     position: relative;
@@ -97,6 +102,11 @@ figure {
 figure:hover {
     box-shadow: var(--glow) 1vw 1vw 1vw, inset var(--glow) 1vw 1vw 1vw;
     
+}
+
+img:hover {
+   transform: scale(1.5);
+   
 }
 figcaption {
     position: absolute;
@@ -131,12 +141,23 @@ figure > p {
    
 }
 
+#fig-1 {
+    display: flex;
+    flex: 0 0 100%;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
 img {
     max-width: 100%;
    padding-top: 5%;
     margin: 2%;
-    position: relative;
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     
 }
 
