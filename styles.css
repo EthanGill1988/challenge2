@@ -70,8 +70,6 @@ a {
     padding: 2.5lh 1vw;
 }
  
-
-
 #fig-3 {
     display: inline-block;
     padding: 15%;
@@ -117,6 +115,8 @@ img:hover {
    transform: scale(1.5);
    
 }
+
+
 figcaption {
     position: absolute;
     top: -1.25lh;
@@ -136,11 +136,13 @@ figcaption {
 figcaption:hover {
     box-shadow: powderblue 1vw 1vw 1vw;
 }
+
 figure > img {
     padding-left: 23%;
     padding-right: 33%;
 
 }
+
 figure > * {
     padding: 0.5lh;
 }
@@ -158,28 +160,18 @@ figure > p {
     flex-wrap: wrap;
 }
 
-img {
+.standardizedImage {
     max-width: 100%;
    padding-top: 5%;
+   padding-left: 5%;
     margin: 2%;
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
     
-    
 }
 
-pre {
-    padding: 1lh;
-    font-size: 125%;
-    font-family: monospace;
-    border-radius: 8px;
-    color:brown;
-    background-color: bisque;
-    margin:1vw; 
-
-}
 @media screen and (min-width: 768px) {
     .card {
         flex: 0 0 50%;
